@@ -1,128 +1,125 @@
 # Eventify - React Native
 
-## Descripción
+## Description
 
-Eventify es una plataforma móvil diseñada para la gestión de eventos e interacción entre usuarios. Incluye funcionalidades esenciales como la administración de eventos, la conexión entre usuarios y características sociales, tales como seguidores, notificaciones y comentarios.
+Eventify is a mobile platform designed for event management and user interaction. It includes essential functionalities such as event administration, user connection, and social features like followers, notifications, and comments.
 
-## Demostración
+## Demo
 
 [![Eventify Demo](https://crnarpvpafbywvdzfukp.supabase.co/storage/v1/object/public/DONT%20DELETE//VideosThumbnail.png)](https://youtu.be/ly95HEZUPlY)
 
-*Haz clic en la imagen para ver la demostración en YouTube*
+*Click on the image to watch the demo on YouTube*
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React Native**: Framework principal para el desarrollo de la aplicación móvil.
-- **Expo**: Plataforma para simplificar el desarrollo de aplicaciones React Native.
-- **TypeScript**: Lenguaje de programación que añade tipado estático a JavaScript.
-- **Supabase**: Plataforma de backend como servicio (BaaS) para autenticación, base de datos y almacenamiento.
-- **React Navigation**: Biblioteca para la navegación entre pantallas.
-- **react-i18next**: Solución de internacionalización.
-- **Jest & Testing Library**: Herramientas para pruebas unitarias e integración.
+- **React Native**: Main framework for mobile application development.
+- **Expo**: Platform to simplify React Native application development.
+- **TypeScript**: Programming language that adds static typing to JavaScript.
+- **Supabase**: Backend-as-a-service (BaaS) platform for authentication, database, and storage.
+- **React Navigation**: Library for screen navigation.
+- **react-i18next**: Internationalization solution.
+- **Jest & Testing Library**: Tools for unit and integration testing.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 reactNative-app/
 ├── src/
-│   ├── components/      # Componentes reutilizables
-│   ├── contexts/        # Contextos de React
-│   │   └── AuthContext.tsx        # Contexto de autenticación
-│   │   └── PushNotifications.tsx  # Contexto de notificaciones push
-│   ├── hooks/           # Hooks personalizados
-│   │   └── useAudioRecoder.tsx     # Hook para manejar audio
-│   │   └── useCurrentLocation.tsx  # Hook para geolocalización
-│   │   └── useImagePicker.tsx      # Hook para cámara y galería
-│   │   └── useMusicPicker.tsx      # Hook para música
-│   ├── lib/             # Bibliotecas y configuraciones
-│   │   └── supabase.ts  # Configuración de Supabase
-│   ├── navigators/      # Configuración de navegación
-│   │   └── AppNavigator.tsx       # Navegador principal de la aplicación
-│   │   └── AuthNavigator.tsx      # Navegador para flujo de autenticación
-│   │   └── TabNavigator.tsx       # Navegador de pestañas
-│   ├── services/        # Servicios
-│   │   └── storage.ts   # Servicio de Almacenamiento
-│   ├── models/          # Modelos
-│   ├── views/           # Pantallas (vistas)
+│   ├── components/      # Reusable components
+│   ├── contexts/        # React Contexts
+│   │   └── AuthContext.tsx        # Authentication Context
+│   │   └── PushNotifications.tsx  # Push Notifications Context
+│   ├── hooks/           # Custom hooks
+│   │   └── useAudioRecoder.tsx     # Hook for handling audio
+│   │   └── useCurrentLocation.tsx  # Hook for geolocation
+│   │   └── useImagePicker.tsx      # Hook for camera and gallery
+│   │   └── useMusicPicker.tsx      # Hook for music
+│   ├── lib/             # Libraries and configurations
+│   │   └── supabase.ts  # Supabase configuration
+│   ├── navigators/      # Navigation configuration
+│   │   └── AppNavigator.tsx       # Main application navigator
+│   │   └── AuthNavigator.tsx      # Navigator for authentication flow
+│   │   └── TabNavigator.tsx       # Tab navigator
+│   ├── services/        # Services
+│   │   └── storage.ts   # Storage Service
+│   ├── models/          # Models
+│   ├── views/           # Screens (views)
 │   ├── controllers/     # Controllers
-├── i18n/               # Configuración y archivos de internacionalización
-├── __tests__/          # Pruebas de la aplicación
-├── App.tsx             # Punto de entrada de la aplicación
-├── package.json        # Dependencias y scripts
-└── jest.setup.js       # Configuración de Jest para pruebas
+├── i18n/               # Internationalization configuration and files
+├── __tests__/          # Application tests
+├── App.tsx             # Application entry point
+├── package.json        # Dependencies and scripts
+└── jest.setup.js       # Jest configuration for tests
 ```
 
-## Requisitos Previos
+## Prerequisites
 
-- Node.js (v23 o superior)
-- npm o yarn
+- Node.js (v23 or higher)
+- npm or yarn
 - Expo CLI
-- Cuenta en Supabase
+- Supabase account
 
-## Configuración del Entorno
+## Environment Setup
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/valeraruggierotesisucv/reactNative-app.git
    cd reactNative-app
    ```
 
-2. Instala las dependencias:
+2. Install dependencies:
    ```bash
    npm install
-   # o
+   # or
    yarn install
    ```
 
-3. Configura las variables de entorno:
-   - Crea un archivo `.env` en la raíz del proyecto
-   - Añade las siguientes variables:
+3. Configure environment variables:
+   - Create a `.env` file in the project root
+   - Add the following variables:
      ```
-     SUPABASE_URL=tu_url_de_supabase
-     SUPABASE_ANON_KEY=tu_clave_anonima_de_supabase
+     SUPABASE_URL=your_supabase_url
+     SUPABASE_ANON_KEY=your_supabase_anon_key
      
      ```
 
-## Ejecución de la Aplicación
+## Running the Application
 
-### Desarrollo
+### Development
 
-Para iniciar la aplicación en modo desarrollo:
+To start the application in development mode:
 
 ```bash
 npm start
-# o
+# or
 yarn start
 ```
 
-Esto iniciará el servidor de desarrollo de Expo. Puedes ejecutar la aplicación en:
-- Dispositivo físico: Escanea el código QR con la aplicación Expo Go
-- Emulador: Presiona 'a' para Android o 'i' para iOS
+This will start the Expo development server. You can run the application on:
+- Physical device: Scan the QR code with the Expo Go app
+- Emulator: Press 'a' for Android or 'i' for iOS
 
-### Pruebas
+### Tests
 
-Para ejecutar las pruebas:
+To run the tests:
 
 ```bash
 npm test
 ```
 
-Para ejecutar pruebas específicas:
+To run specific tests:
 
 ```bash
-npm test -- --testNamePattern="nombre_del_test"
+npm test -- --testNamePattern="test_name"
 ```
 
-## Despliegue
+## Deployment
 
-### Generación de APK
+### APK Generation
 
-Para generar archivos de instalación:
+To generate installation files:
 
 ```bash
-expo build:android  # Para Android (APK)
+expo build:android  # For Android (APK)
 ```
 
-## Contacto
-
-Para preguntas o sugerencias, por favor contacta a valeraruggierotesisucv@gmail.com
