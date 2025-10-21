@@ -6,7 +6,7 @@ Eventify is a mobile platform designed for event management and user interaction
 
 ## Demo
 
-[![Eventify Demo](https://crnarpvpafbywvdzfukp.supabase.co/storage/v1/object/public/DONT%20DELETE//VideosThumbnail.png)](https://youtu.be/ly95HEZUPlY)
+[![Eventify Demo](/eventifyThumbnail.png)](https://youtu.be/ly95HEZUPlY)
 
 *Click on the image to watch the demo on YouTube*
 
