@@ -1,0 +1,1 @@
+export const IMAGE_PLACEHOLDER = "https://crnarpvpafbywvdzfukp.supabase.co/storage/v1/object/public/DONT%20DELETE//defaultImage.jpg"
